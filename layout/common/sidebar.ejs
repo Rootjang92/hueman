@@ -17,6 +17,8 @@
     <% if (is_post()) { %>
         <%- partial('post/nav', {post: page}) %>
     <% } %>
+    <div class="github-card" data-github="Rootjang92" data-width="340" data-height="152" data-theme="default"></div>
+    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
     <div class="widgets-container">
         <% if (theme.widgets) { %>
             <% theme.widgets.forEach(function(widget) { %>
@@ -24,4 +26,5 @@
             <% }) %>
         <% } %>
     </div>
+    <%- partial('ads/adsense') %>
 </aside>
